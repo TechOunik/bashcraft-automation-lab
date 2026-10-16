@@ -1,0 +1,23 @@
+# Temporary and backup files
+*.tmp
+*.bak
+*~
+
+# Logs
+*.log
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+
+# Bash debugging output
+bash_trace.log

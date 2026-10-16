@@ -1,5 +1,11 @@
 # ⚒️ Bashcraft: The Automation Lab
 
+![Shell](https://img.shields.io/badge/Shell-Bash-121011?logo=gnubash&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Linux-blue?logo=linux)
+![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
+
+[Bashcraft Automation Lab](assets/bashcraft-banner.png)
+
 *From typing commands to scripting solutions. One shell at a time.*
 
 
@@ -34,59 +40,45 @@ Because knowing a command is one thing. Knowing how to turn it into a solution i
 
 The repository will grow alongside the course.
 
-Stage
+ Course Progress Tracker
 
-Focus
+| Stage | Course Topics | Practical Work | Status |
+|:---:|---|---|:---:|
+| 01 | Terminal and File Manipulation | Navigation, file operations, hidden files, searching and paging files | ⬜ |
+| 02 | Man Pages and Commands | Man pages, programs, commands, and basic variables | ⬜ |
+| 03 | Vim and File Permissions | Vim basics, `chmod`, and file permissions | ⬜ |
+| 04 | Bash Scripting Fundamentals | User input, functions, conditionals, and `for` loops | ⬜ |
+| 05 | Advanced Bash Data Handling | Case statements, indexed and associative arrays, IFS, command substitution, arithmetic, and process substitution | ⬜ |
+| 06 | Text Processing | `cut`, `tr`, `sed`, `awk`, `grep`, and `find` | ⬜ |
+| 07 | Arguments and Pipelines | Bash arguments, pipe status, and timing commands | ⬜ |
+| 08 | Code Structure and Return Values | Sourcing code, curlies vs. parens, return vs. output | ⬜ |
+| 09 | Parameter and Array Expansion | Parameter expansion and array expansion | ⬜ |
+| 10 | Globbing and Brace Expansion | Basic and extended globbing, shell options, brace expansion, and numeric expansion | ⬜ |
+| 11 | Output and Data Formatting | `printf`, date formatting, regular expressions, and `mapfile` | ⬜ |
+| 12 | Tests and Process Communication | Brackets vs. `test`, special strings, traps, signals, and named pipes | ⬜ |
+| 13 | Terminal Customisation | Colour output, cursor commands, TTY detection, PS1, Bash customisation, and Readline shortcuts | ⬜ |
+| 14 | Debugging and Common Pitfalls | `ls` pitfalls, aliases with arguments, string length, and debugging | ⬜ |
 
-1. Terminal navigation and file manipulation
+**Status Key:** ⬜ Not started · 🟡 In progress · ✅ Completed
 
-2. Man pages, commands, variables, and permissions
-
-3. Writing scripts, user input, functions, and loops
-
-4. Case statements, arrays, IFS, and arithmetic
-
-5. Text processing with cut, tr, sed, awk, and grep
-
-6. Finding files and handling script arguments
-
-7. Pipe status, timing, sourcing, and return values
-
-8. Parameter and array expansion
-
-9. Globbing and brace expansion
-
-10. printf, date formatting, regular expressions, and mapfile
-
-11. Tests, special strings, signals, and named pipes
-
-12. Terminal output, TTY detection, and shell customisation
-
-13. Readline shortcuts, aliases, and common Bash pitfalls
-
-14. Debugging and reviewing what I've learned
-
-The stages above reorganise the course topics into a practical learning map; they are not the course's original chapter numbering.
-
----
+*The repository will grow alongside the course. Each stage represents a learning milestone, with progress updated as I complete the practical exercises and.*
 
 ##  Repository Structure
 
-```
+```plaintext
 bashcraft-automation-lab/
 ├── README.md
-├── 01-terminal-and-files/
-├── 02-variables-and-permissions/
-├── 03-control-flow-and-functions/
-├── 04-arrays-and-arithmetic/
-├── 05-text-processing/
-├── 06-arguments-and-pipelines/
-├── 07-parameter-expansion/
-├── 08-globbing-and-brace-expansion/
-├── 09-formatting-and-regex/
-├── 10-processes-and-signals/
-├── 11-shell-customisation/
-├── 12-debugging-and-pitfalls/
+├── assets/
+│   ├── bashcraft-banner.png
+│   └── terminal-practice.png
+├── notes/
+│   ├── 01-terminal-basics.md
+│   ├── 02-variables.md
+│   └── 03-loops-and-functions.md
+├── scripts/
+│   ├── hello.sh
+│   ├── file-organiser.sh
+│   └── system-info.sh
 └── projects/
 ```
 
@@ -162,4 +154,4 @@ Don't just run the command. Understand it. Don't just copy the script. Explain i
 
 This is Bashcraft. The learning happens one script, one mistake, and one breakthrough at a time.
 
-Built through practice, curiosity, and a willingness to learn.
+*Built through practice, curiosity, and a willingness to learn.*
