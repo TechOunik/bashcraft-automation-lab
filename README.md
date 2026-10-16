@@ -30,26 +30,17 @@ The workspace is modularized to separate technical documentation from executable
 *   **Version Control:** Git / GitHub
 *   **Primary Focus:** Systems Administration, Log Processing, Security Operations (SOC)
 
-## Development Matrix
+---
 
-The following table tracks the operational capabilities being developed in this lab, progressing from core fundamentals to advanced data handling and process communication.
+## Core Capabilities
 
-| Stage | Operational Domain | Technical Scope | Status |
-| :--- | :--- | :--- | :--- |
-| **01** | **Terminal Operations** | Core navigation, file system manipulation, hidden structures | [ Completed ] |
-| **02** | **System Binaries** | Man pages, command execution, and environment variables | [ Completed ] |
-| **03** | **Access Controls** | Vim, `chmod`, and granular file permission management | [ Completed ] |
-| **04** | **Control Structures** | User input, functions, conditionals, and `for` loop automation | [ In Progress ] |
-| **05** | **Advanced Data Handling** | Indexed/associative arrays, command substitution, IFS tuning | Pending |
-| **06** | **Text Processing** | Stream manipulation via `awk`, `sed`, `grep`, `tr`, and `find` | Pending |
-| **07** | **Pipeline Architecture** | Argument parsing, pipe status evaluation, and timing metrics | Pending |
-| **08** | **Code Structure** | Sourcing routines, subshells vs. blocks, and exit code handling | Pending |
-| **09** | **Expansion Techniques** | Advanced parameter and array expansion | Pending |
-| **10** | **Pattern Matching** | Extended globbing, brace expansion, and shell options (`shopt`) | Pending |
-| **11** | **Formatting & Output** | `printf`, regex integration, mapfile, and date string formatting | Pending |
-| **12** | **Process Communication** | Traps, signal handling, named pipes, and standard test brackets | Pending |
-| **13** | **Terminal Configuration** | ANSI color output, TTY detection, and `PS1` customization | Pending |
-| **14** | **Debugging & Validation** | Subshell pitfalls, string validation, and execution tracing | Pending |
+The scripts and documentation in this lab focus on the following operational domains:
+
+*   **System Automation:** Automating repetitive administrative tasks and environment setups.
+*   **Access & Permissions:** Managing granular file permissions and system access controls.
+*   **Data Parsing:** Extracting structured data from unstructured system logs using `awk`, `sed`, and `grep`.
+*   **Process Management:** Handling subshells, background processes, and exit codes safely.
+*   **Tool Development:** Building interactive command-line utilities with custom user inputs and ANSI formatting.
 
 ---
 *Maintained by Obioma Felicity (TechOunik)*
