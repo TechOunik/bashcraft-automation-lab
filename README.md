@@ -4,7 +4,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Linux-blue?logo=linux)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
 
-[Bashcraft Automation Lab](assets/bashcraft-banner.png)
+![Bashcraft Automation Lab](assets/bashcraft-banner.png)
 
 *From typing commands to scripting solutions. One shell at a time.*
 
