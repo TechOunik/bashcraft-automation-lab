@@ -18,10 +18,10 @@ The foundational curriculum driving this lab is *The Complete Bash Scripting Cou
 
 The workspace is modularized to separate technical documentation from executable code:
 
-*   **/scripts** — Executable Bash scripts, ranging from basic administrative tools to complex text-processing utilities.
-*   **/projects** — Larger, multi-script automation frameworks and practical lab exercises.
-*   **/notes** — Technical documentation, command syntax references, and workflow guidelines.
-*   **/assets** — Auxiliary files, sample log data, and configuration templates used for testing.
+*   **/scripts:** Executable Bash scripts, ranging from basic administrative tools to complex text-processing utilities.
+*   **/projects:** Larger, multi-script automation frameworks and practical lab exercises.
+*   **/notes:** Technical documentation, command syntax references, and workflow guidelines.
+*   **/assets:** Auxiliary files, sample log data, and configuration templates used for testing.
 
 ## Technical Environment
 
