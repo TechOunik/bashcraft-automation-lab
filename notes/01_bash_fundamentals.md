@@ -72,3 +72,28 @@ for thing in man ran can tan han; do
     echo "thing is $thing"
 done
 ```
+
+---
+
+## 7. File Extensions and the Shebang
+In Linux file extensions like .sh do not actually matter. You can name your script myscript.sh or just myscript and it will work exactly the same. 
+
+What really matters is the first line of your file called the shebang. It looks like this:
+#!/bin/bash
+
+This line tells the computer exactly which program should be used to run the code inside the file.
+
+---
+
+## 8. Making Scripts Executable
+When you create a new script file it is just a plain text file. The computer will not let you run it as a program right away for security reasons.
+
+You have to give the file special permission to run. You do this using the chmod command.
+
+To make a file executable you type:
+`chmod +x yourfilename`
+
+The +x stands for plus execute. It adds the execution permission to your file.
+
+Once you have done that you can run your script by typing a dot and a forward slash before the name like this:
+`./yourfilename`
