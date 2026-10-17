@@ -1,5 +1,7 @@
 # Bash Scripting Notes
 
+![Bashcraft Automation Lab](assets/bashcraft-loop.png)
+
 ## 1. What is a Bash Script?
 A Bash script is simply a text file filled with Linux commands. If you can type a command in the terminal, you can save it in a script to run automatically later.
 
@@ -76,10 +78,10 @@ done
 ---
 
 ## 7. File Extensions and the Shebang
-In Linux file extensions like .sh do not actually matter. You can name your script myscript.sh or just myscript and it will work exactly the same. 
+In Linux file extensions like .sh do not actually matter. You can name your script `myscript.sh` or just `myscript` and it will work exactly the same. 
 
 What really matters is the first line of your file called the shebang. It looks like this:
-#!/bin/bash
+`#!/bin/bash`
 
 This line tells the computer exactly which program should be used to run the code inside the file.
 
