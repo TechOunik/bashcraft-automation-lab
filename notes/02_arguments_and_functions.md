@@ -9,7 +9,8 @@ To make your scripts interactive you can ask the user to type something. You use
 * read -p "Enter your name: " username: The -p flag lets you print a message on the screen so the user knows what to type.
 
 Example 
-```#!/bin/bash
+```bash
+#!/bin/bash
 
 read -p 'Enter your name: ' name
 
@@ -36,7 +37,8 @@ We use square brackets to test conditions. You must always leave spaces on the i
 
 Example script checking a number:
 
-```#!/bin/bash
+```bash
+#!/bin/bash
 read -p "What is your age? " age
 
 if [ $age -ge 18 ]; then
@@ -56,7 +58,8 @@ Here are the common ways to compare numbers:
 
 You can also use if statements to check if the user provided an argument before asking them to type one. Here is a script that checks if $1 has data. The -n checks if the variable is not empty.
 
-```#!/bin/bash
+```bash
+#!/bin/bash
 
 if [[ -n $1 ]]; then
     name=$1 
@@ -72,9 +75,10 @@ Functions let you group several commands together under one name. This saves you
 
 Example of creating a function:
 
+```bash
 #!/bin/bash
 
-```say_hello() {
+say_hello() {
     echo "Hello there!"
     echo "Welcome to the system."
 }
@@ -95,7 +99,8 @@ You can use a for loop with $@ to grab every single argument a user typed and ru
 
 You can also run one script from inside another script. In this example we run the hello script for every name provided and we use >> to push all the output into a text file instead of printing it on the screen.
 
-```#!/bin/bash
+```bash
+#!/bin/bash
 
 for name in "$@"; do
     ./hello "$name" >> file.txt
