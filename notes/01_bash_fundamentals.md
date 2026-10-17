@@ -1,6 +1,6 @@
 # Bash Scripting Notes
 
-![Bashcraft Automation Lab](assets/bashcraft-loop.png)
+![Bashcraft Automation Lab](../assets/bashcraft-loop.png)
 
 ## 1. What is a Bash Script?
 A Bash script is simply a text file filled with Linux commands. If you can type a command in the terminal, you can save it in a script to run automatically later.

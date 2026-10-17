@@ -1,8 +1,26 @@
 # Bash Scripting Note 2
 
-![Bashcraft Automation Lab](assets/bashcraft-userinput.png)
+![Bashcraft Automation Lab](../assets/bashcraft-userinput.png)
 
-## 1. Getting Input from Arguments
+## 1. Getting User Input
+To make your scripts interactive you can ask the user to type something. You use the read command to pause the script and wait for input.
+
+* read username: Waits for the user to type something and saves it in a variable called username.
+* read -p "Enter your name: " username: The -p flag lets you print a message on the screen so the user knows what to type.
+
+Example 
+```#!/bin/bash
+
+read -p 'Enter your name: ' name
+
+fi
+
+echo "hello $name"
+```
+
+---
+
+## 2. Getting Input from Arguments
 When you run a script you can type words right after the script name. Bash automatically saves these words into numbered variables.
 
 * $1 is the first word you typed after the script name.
@@ -11,10 +29,32 @@ When you run a script you can type words right after the script name. Bash autom
 
 ---
 
-## 2. If and Else Statements
-You can use if statements to check if the user provided an argument before asking them to type one. 
+## 3. If and Else Statements
+Conditionals let your script make decisions. The script checks if something is true and runs specific code based on the answer.
 
-Here is the hello script example. It checks if $1 exists. If it has data it uses it. If it is empty it pauses and asks the user for a name.
+We use square brackets to test conditions. You must always leave spaces on the inside of the brackets or Bash will give an error.
+
+Example script checking a number:
+
+```#!/bin/bash
+read -p "What is your age? " age
+
+if [ $age -ge 18 ]; then
+    echo "You are an adult"
+else
+    echo "You are a minor"
+fi
+```
+
+Here are the common ways to compare numbers:
+* -eq means exactly equal to
+* -ne means not equal to
+* -gt means greater than
+* -lt means less than
+* -ge means greater than or equal to
+* -le means less than or equal to
+
+You can also use if statements to check if the user provided an argument before asking them to type one. Here is a script that checks if $1 has data. The -n checks if the variable is not empty.
 
 ```#!/bin/bash
 
@@ -24,26 +64,33 @@ else
     read -p 'Enter your name: ' name
 fi
 
-echo "hello $name"```
+echo "hello $name"
+```
 
-The [[ -n $1 ]] part is a test. The -n checks if the variable $1 has something inside it (meaning it is not empty).
+## 4. Functions
+Functions let you group several commands together under one name. This saves you from typing the same code over and over again in different parts of your script.
 
----
+Example of creating a function:
 
-## 3. Functions and Local Variables
-Functions group commands together so you can reuse them. Inside a function you can use the word local to create a variable that only exists inside that specific function. 
+#!/bin/bash
 
-Functions can also hand back a number when they finish by using the return command.
+```say_hello() {
+    echo "Hello there!"
+    echo "Welcome to the system."
+}
+```
+To run the function later in your script you just type its name:
+say_hello
 
-```greet() {
+Inside a function you can also use the word local to create a variable that only exists inside that specific function. Functions can also hand back a number when they finish by using the return command.
+
+``` greet() {
     local name=$1
     echo "hello $name (from func)"
     return 5
-}```
-
----
-
-## 4. Looping Through All Arguments
+}
+```
+## 5. Looping Through All Arguments
 You can use a for loop with $@ to grab every single argument a user typed and run code on each one.
 
 You can also run one script from inside another script. In this example we run the hello script for every name provided and we use >> to push all the output into a text file instead of printing it on the screen.
@@ -54,4 +101,5 @@ for name in "$@"; do
     ./hello "$name" >> file.txt
 done
 ```
-This loop takes every name provided runs the hello script for each person and saves all the greetings straight into file.txt.
+
+
