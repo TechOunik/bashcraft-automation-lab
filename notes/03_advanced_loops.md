@@ -1,6 +1,6 @@
 # Bash Scripting Note 3
 
-![Bashcraft Automation Lab](../assets/conditionals.png)
+![Bashcraft Automation Lab](../assets/bashcraft-conditionals.png)
 
 ## 1. More on Conditionals
 You can compare variables to see if they match. When using double square brackets `[[ ]]`, you do not always need to put quotes around your variables.
