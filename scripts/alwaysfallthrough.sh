@@ -1,0 +1,11 @@
+#!/bin/bash
+
+s="far"
+
+case "$s" in
+	d*) echo 'matched d*';&
+	dave) echo 'matched dave';&
+	f*) echo 'matched f*';&
+	foo) echo 'matched foo';&
+	*) echo 'matched *';&
+esac
